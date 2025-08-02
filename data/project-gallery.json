@@ -1,0 +1,76 @@
+{
+  "project_highlights": [
+    {
+      "title": "Neural Network Visualization Tool",
+      "image": "/placeholder.svg?height=300&width=300",
+      "period": "2023.03 - 2023.08",
+      "descriptions": [
+        "Developed an interactive web-based tool for visualizing neural network architectures",
+        "Implemented real-time training progress monitoring with dynamic loss curves",
+        "Created intuitive drag-and-drop interface for network design and modification"
+      ],
+      "custom_tag": "Deep Learning",
+      "is_team": false
+    },
+    {
+      "title": "Molecular Dynamics Simulation Platform",
+      "image": "/placeholder.svg?height=300&width=300",
+      "period": "2022.09 - 2023.02",
+      "descriptions": [
+        "Built scalable simulation platform for large-scale molecular dynamics calculations",
+        "Optimized computational algorithms achieving 40% performance improvement",
+        "Integrated machine learning models for predictive analysis of molecular behavior"
+      ],
+      "custom_tag": "Computational Chemistry",
+      "is_team": true
+    },
+    {
+      "title": "AI-Powered Research Assistant",
+      "image": "/placeholder.svg?height=300&width=300",
+      "period": "2023.09 - 2024.01",
+      "descriptions": [
+        "Designed and implemented intelligent research paper analysis system",
+        "Developed natural language processing pipeline for automated literature review",
+        "Created knowledge graph visualization for research topic exploration"
+      ],
+      "custom_tag": "NLP",
+      "is_team": false
+    },
+    {
+      "title": "Quantum Computing Simulator",
+      "image": "/placeholder.svg?height=300&width=300",
+      "period": "2022.01 - 2022.06",
+      "descriptions": [
+        "Implemented quantum circuit simulator with support for major quantum gates",
+        "Developed educational interface for quantum algorithm visualization",
+        "Collaborated with physics department to validate simulation accuracy"
+      ],
+      "custom_tag": "Quantum Computing",
+      "is_team": true
+    },
+    {
+      "title": "Automated Lab Equipment Controller",
+      "image": "/placeholder.svg?height=300&width=300",
+      "period": "2023.06 - 2023.12",
+      "descriptions": [
+        "Designed IoT-based system for remote laboratory equipment monitoring",
+        "Implemented automated data collection and analysis pipeline",
+        "Reduced manual intervention by 80% through intelligent scheduling algorithms"
+      ],
+      "custom_tag": "IoT",
+      "is_team": true
+    },
+    {
+      "title": "Chemical Reaction Predictor",
+      "image": "/placeholder.svg?height=300&width=300",
+      "period": "2022.03 - 2022.08",
+      "descriptions": [
+        "Developed machine learning model for predicting chemical reaction outcomes",
+        "Trained on large-scale reaction database with 95% accuracy achievement",
+        "Created user-friendly web interface for researchers and students"
+      ],
+      "custom_tag": "Machine Learning",
+      "is_team": false
+    }
+  ]
+}
