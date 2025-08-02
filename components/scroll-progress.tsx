@@ -27,8 +27,8 @@ export function ScrollProgress({ sections }: ScrollProgressProps) {
         if (!element) return null
 
         const rect = element.getBoundingClientRect()
-        const offsetTop = rect.top + scrollTop // 문서 상단 기준 섹션 시작 위치
-        const offsetBottom = offsetTop + rect.height // 문서 상단 기준 섹션 끝 위치
+        const offsetTop = rect.top + scrollTop 
+        const offsetBottom = offsetTop + rect.height 
 
         return {
           id: section.id,
@@ -42,23 +42,20 @@ export function ScrollProgress({ sections }: ScrollProgressProps) {
 
     if (sectionPositions.length === 0) return
 
-    // 상단 내비게이션 바 높이를 고려한 오프셋
-    // 이 값은 상단 고정 바의 실제 높이와 스크롤 감지 민감도에 따라 조정될 수 있습니다.
-    const headerOffset = 80 // 이전 100에서 80으로 조정 (상단 바 높이 64px + 여유 공간)
+    const headerOffset = 80
     const currentScrollPosition = scrollTop + headerOffset
     const viewportHeight = window.innerHeight
 
     let newActiveSection = ""
 
-    // 스크롤이 맨 위일 때 첫 번째 섹션 활성화
     if (scrollTop < 50) {
       newActiveSection = sectionPositions[0]!.id
     }
-    // 스크롤이 맨 아래에 가까울 때 마지막 섹션 활성화
+
     else if (scrollTop + viewportHeight >= document.documentElement.scrollHeight - 50) {
       newActiveSection = sectionPositions[sectionPositions.length - 1]!.id
     }
-    // 그 외의 경우, 뷰포트 중앙에 가장 가까운 섹션 또는 가장 많이 보이는 섹션 활성화
+
     else {
       let closestSectionId = ""
       let minDistanceToCenter = Number.POSITIVE_INFINITY
@@ -66,9 +63,8 @@ export function ScrollProgress({ sections }: ScrollProgressProps) {
       for (const section of sectionPositions) {
         if (!section) continue
 
-        // 섹션의 중앙 지점
         const sectionCenter = section.offsetTop + section.element.offsetHeight / 2
-        // 뷰포트의 중앙 지점
+
         const viewportCenter = scrollTop + viewportHeight / 2
 
         const distance = Math.abs(sectionCenter - viewportCenter)
@@ -96,8 +92,7 @@ export function ScrollProgress({ sections }: ScrollProgressProps) {
     window.addEventListener("scroll", handleScroll, { passive: true })
     window.addEventListener("resize", updateScrollState, { passive: true })
 
-    // DOMContentLoaded 이후에도 한 번 더 업데이트하여 모든 콘텐츠 로드 후 정확성 확보
-    const timer = setTimeout(updateScrollState, 300) // 약간의 지연 추가
+    const timer = setTimeout(updateScrollState, 300) 
 
     return () => {
       window.removeEventListener("scroll", handleScroll)
@@ -136,8 +131,8 @@ export function ScrollProgress({ sections }: ScrollProgressProps) {
                 onClick={() => {
                   const element = document.getElementById(section.id)
                   if (element) {
-                    // 스크롤 시 상단 내비게이션 바를 고려한 오프셋
-                    const headerOffsetForScroll = 80 // 스크롤 이동 시에도 동일한 오프셋 적용
+
+                    const headerOffsetForScroll = 80 
                     const elementPosition = element.offsetTop - headerOffsetForScroll
                     window.scrollTo({
                       top: Math.max(0, elementPosition),
