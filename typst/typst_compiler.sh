@@ -23,4 +23,4 @@ python3 "$YML2JSON" "$CV_YAML" "$CV_JSON"
 python3 "$YML2JSON" "$PROJECT_GALLERY_YAML" "$PROJECT_GALLERY_JSON"
 
 # Compile to PDF with typst
-"$TYPST_BIN" compile "$TYPST_TEMPLATE" "$PDF_OUT"
+"$TYPST_BIN" compile --root "$PROJECT_ROOT" "$TYPST_TEMPLATE" "$PDF_OUT"
