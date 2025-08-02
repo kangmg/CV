@@ -13,9 +13,9 @@ export function PDFViewer() {
           </div>
 
           <div className="p-6">
-<div className="aspect-[8.5/11] w-full bg-background border border-border rounded-lg overflow-hidden shadow-inner">
-  <iframe src="/data/CV.pdf" className="w-full h-full" title="CV PDF" style={{ border: "none" }} />
-</div>
+            <div className="aspect-[8.5/11] w-full bg-background border border-border rounded-lg overflow-hidden shadow-inner">
+              <iframe src="/data/CV.pdf" className="w-full h-full" title="CV PDF" style={{ border: "none" }} />
+            </div>
 
             <div className="mt-6 flex justify-center">
               <a
