@@ -78,6 +78,15 @@
 )
 
 // awards and scholarship
+= Awards and Scholarships
+#for award in data.awards_scholarships {
+  exp(
+    title: award.title,
+    organization: award.organization,
+    date: award.date,
+    details: list(..award.details.map(item => [• #item])),
+  )
+}
 
 // additional 
 = Additional Activities
