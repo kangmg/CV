@@ -89,11 +89,11 @@
 }
 
 // additional 
-= Additional Activities
+= Additional Activity
 #exp(
-  title: data.additional_activities.activity,
-  date: data.additional_activities.duration,
-  details: list(data.additional_activities.description),
+  title: data.additional_activity.activity,
+  date: data.additional_activity.duration,
+  details: list(data.additional_activity.description),
 )
 
 // presentations
