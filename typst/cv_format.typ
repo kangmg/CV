@@ -81,10 +81,10 @@
 = Awards and Scholarships
 #for award in data.awards_scholarships {
   exp(
-    title: award.title,
-    organization: award.organization,
-    date: award.date,
-    details: list(..award.details.map(item => [• #item])),
+    title: award.name,
+    organization: award.institution,
+    date: award.year,
+    details: list("Amount: " + award.amount),
   )
 }
 
