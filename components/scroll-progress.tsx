@@ -87,16 +87,8 @@ export function ScrollProgress({ sections }: ScrollProgressProps) {
   }, [sections, activeSection])
 
   useEffect(() => {
-    let ticking = false
-
     const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          updateScrollState()
-          ticking = false
-        })
-        ticking = true
-      }
+      updateScrollState()
     }
 
     updateScrollState() // Initial call
