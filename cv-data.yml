@@ -1,0 +1,116 @@
+update: '2024-01-15'
+name: dummy name
+title: Computational Chemistry & Machine Learning Researcher
+github: github.com/dummy
+email: johndoe@example.com
+blog: blog.example.com
+research_interest: My research focuses on various areas of computational chemistry
+  and machine learning applications in molecular simulations. I am particularly interested
+  in developing new methods for accurate and efficient simulations of complex chemical
+  systems.
+skills:
+  programming_languages:
+  - Python (advanced)
+  - Java (intermediate)
+  - C++ (basic)
+  scientific_skills:
+  - 'Quantum Chemistry: Gaussian, ORCA, etc.'
+  - 'Machine Learning: TensorFlow, Keras'
+  - 'Visualization Tools: PyMol, matplotlib, etc.'
+  code_development:
+  - 'Version Control: Git'
+  - Python packaging & deployment
+  - 'Containerization: Docker'
+  - 'Cloud Services: AWS, Azure'
+  large_data_processing:
+  - 'File Formats: CSV, JSON'
+  - 'Data Collection: Web Scraping, APIs'
+research_experience:
+- title: Research Project A
+  duration: January 2020 - June 2020
+  lab: Lab of Computational Chemistry
+  advisor: Prof. Smith
+  achievements:
+  - Conducted experiments on X
+  - Analyzed data using Y method
+  - Published results in Z journal
+- title: Research Project B
+  duration: July 2020 - December 2020
+  lab: Lab of Machine Learning
+  advisor: Prof. Johnson
+  achievements:
+  - Developed a new algorithm for Q
+  - Implemented the algorithm in Python
+  - Presented findings at R conference
+- title: Research Project C
+  duration: January 2021 - June 2021
+  lab: Lab of Data Science
+  advisor: Prof. Lee
+  achievements:
+  - Collected and analyzed large datasets
+  - Developed a predictive model for S
+  - Collaborated with industry partners
+projects:
+- title: Personal Project A
+  achievements:
+  - Developed a tool for Z
+  - Implemented a new algorithm
+  - Created a user-friendly interface
+- title: Image to Text Service (Deep Learning)
+  link: Github
+  duration: June 2021
+  event: 2021 Data Science Hackathon
+  achievements:
+  - Proposed the project idea and managed the team
+  - Collected and preprocessed image data
+  - Trained a CNN model for image classification
+  - Deployed the service using Flask
+- title: Voice Recognition System (Deep Learning)
+  link: Github
+  duration: September 2021 - May 2022
+  event: 2022 AI Challenge
+  mentor: Dr. Kim
+  achievements:
+  - Studied state-of-the-art voice recognition techniques
+  - Developed a strategy for data augmentation
+  - Preprocessed audio data and extracted features
+  - Trained and evaluated deep learning models
+presentations:
+- title: Introduction to Quantum Chemistry
+  event: Seminar Series, Department of Chemistry
+  date: May 2021
+- title: Machine Learning in Chemistry
+  event: Annual Chemistry Conference
+  date: March 2022
+- title: Data Visualization Techniques
+  event: Workshop on Data Science
+  date: November 2022
+- title: Applications of Deep Learning
+  event: AI Symposium
+  date: June 2023
+education:
+  university: Example University
+  duration: September 2018 - June 2022
+  degree: B.S. Chemistry
+  gpa: (3.8, 4.0) / 4.0
+military_service:
+  branch: Country's Army
+  rank: Sergeant
+  duration: July 2022 - January 2024
+additional_activity:
+  activity: Data Science Bootcamp
+  duration: February 2023 - July 2023
+  description: Completed a 6-month intensive course on data science and machine learning
+awards_scholarships:
+- name: Undergraduate Research Grant
+  institution: Korea University
+  year: '2024'
+  amount: KRW 1,500,000
+- name: Chi-Woo Lee Scholarship
+  institution: Korea University
+  year: '2023'
+  amount: KRW 5,000,000
+- name: Academic Excellence Scholarship
+  institution: Korea University
+  year: '2022'
+  amount: KRW 2,350,000
