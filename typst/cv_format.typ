@@ -1,7 +1,7 @@
 #import "@preview/clickworthy-resume:1.0.1": *
 
 // read JSON data
-#let data = json("tmp.json")
+#let data = json("../data/cv-data.json")
 
 // personal info
 #let name = data.name
