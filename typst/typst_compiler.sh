@@ -15,7 +15,7 @@ CV_JSON="$DATA_DIR/cv-data.json"
 PROJECT_GALLERY_JSON="$DATA_DIR/project-gallery.json"
 TYPST_BIN="$SCRIPT_DIR/typst"
 TYPST_TEMPLATE="$SCRIPT_DIR/cv_format.typ"
-PDF_OUT="$DATA_DIR/CV.pdf"
+PDF_OUT="$PROJECT_ROOT/public/data/CV.pdf"
 YML2JSON="$SCRIPT_DIR/yml2json.py"
 
 # Convert YAML to JSON

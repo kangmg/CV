@@ -6,7 +6,7 @@ import { ThemeProvider } from "next-themes"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
+  title: "CV (Mingi KANG)",
   description: "Created with v0",
   generator: "v0.dev",
 }

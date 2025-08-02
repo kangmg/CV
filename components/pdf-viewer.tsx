@@ -13,13 +13,13 @@ export function PDFViewer() {
           </div>
 
           <div className="p-6">
-            <div className="aspect-[8.5/11] w-full bg-background border border-border rounded-lg overflow-hidden shadow-inner">
-              <iframe src="/data/cv.pdf" className="w-full h-full" title="CV PDF" style={{ border: "none" }} />
-            </div>
+<div className="aspect-[8.5/11] w-full bg-background border border-border rounded-lg overflow-hidden shadow-inner">
+  <iframe src="/data/CV.pdf" className="w-full h-full" title="CV PDF" style={{ border: "none" }} />
+</div>
 
             <div className="mt-6 flex justify-center">
               <a
-                href="/data/cv.pdf"
+                href="/data/CV.pdf"
                 download="CV.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
               >
