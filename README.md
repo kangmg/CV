@@ -1,3 +1,5 @@
-It is currently `dummy`
+It is currently `dummy` cv.
 
-https://kangmg.github.io/CV/
+Live on https://kangmg.github.io/CV/
+
+To update the cv, modify the `cv-data.yml` & `project-gallery.yml`
