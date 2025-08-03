@@ -2,7 +2,7 @@
   "project_highlights": [
     {
       "title": "Neural Network Visualization Tool",
-      "image": "/placeholder.svg",
+      "image": "/placeholder.svg?height=300&width=300",
       "period": "2023.03 - 2023.08",
       "descriptions": [
         "Developed an interactive web-based tool for visualizing neural network architectures",
@@ -14,7 +14,7 @@
     },
     {
       "title": "Molecular Dynamics Simulation Platform",
-      "image": "/placeholder.svg",
+      "image": "/placeholder.svg?height=300&width=300",
       "period": "2022.09 - 2023.02",
       "descriptions": [
         "Built scalable simulation platform for large-scale molecular dynamics calculations",
@@ -26,7 +26,7 @@
     },
     {
       "title": "AI-Powered Research Assistant",
-      "image": "/placeholder.svg",
+      "image": "/placeholder.svg?height=300&width=300",
       "period": "2023.09 - 2024.01",
       "descriptions": [
         "Designed and implemented intelligent research paper analysis system",
@@ -38,7 +38,7 @@
     },
     {
       "title": "Quantum Computing Simulator",
-      "image": "/placeholder.svg",
+      "image": "/placeholder.svg?height=300&width=300",
       "period": "2022.01 - 2022.06",
       "descriptions": [
         "Implemented quantum circuit simulator with support for major quantum gates",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Automated Lab Equipment Controller",
-      "image": "/placeholder.svg",
+      "image": "/placeholder.svg?height=300&width=300",
       "period": "2023.06 - 2023.12",
       "descriptions": [
         "Designed IoT-based system for remote laboratory equipment monitoring",
@@ -62,7 +62,7 @@
     },
     {
       "title": "Chemical Reaction Predictor",
-      "image": "/placeholder.svg",
+      "image": "/placeholder.svg?height=300&width=300",
       "period": "2022.03 - 2022.08",
       "descriptions": [
         "Developed machine learning model for predicting chemical reaction outcomes",

@@ -7,7 +7,11 @@
   "blog": "blog.example.com",
   "research_interest": "My research focuses on various areas of computational chemistry and machine learning applications in molecular simulations. I am particularly interested in developing new methods for accurate and efficient simulations of complex chemical systems.",
   "skills": {
-    "programming_languages": ["Python (advanced)", "Java (intermediate)", "C++ (basic)"],
+    "programming_languages": [
+      "Python (advanced)",
+      "Java (intermediate)",
+      "C++ (basic)"
+    ],
     "scientific_skills": [
       "Quantum Chemistry: Gaussian, ORCA, etc.",
       "Machine Learning: TensorFlow, Keras",
@@ -19,7 +23,10 @@
       "Containerization: Docker",
       "Cloud Services: AWS, Azure"
     ],
-    "large_data_processing": ["File Formats: CSV, JSON", "Data Collection: Web Scraping, APIs"]
+    "large_data_processing": [
+      "File Formats: CSV, JSON",
+      "Data Collection: Web Scraping, APIs"
+    ]
   },
   "research_experience": [
     {
@@ -27,7 +34,11 @@
       "duration": "January 2020 - June 2020",
       "lab": "Lab of Computational Chemistry",
       "advisor": "Prof. Smith",
-      "achievements": ["Conducted experiments on X", "Analyzed data using Y method", "Published results in Z journal"]
+      "achievements": [
+        "Conducted experiments on X",
+        "Analyzed data using Y method",
+        "Published results in Z journal"
+      ]
     },
     {
       "title": "Research Project B",
@@ -55,7 +66,11 @@
   "projects": [
     {
       "title": "Personal Project A",
-      "achievements": ["Developed a tool for Z", "Implemented a new algorithm", "Created a user-friendly interface"]
+      "achievements": [
+        "Developed a tool for Z",
+        "Implemented a new algorithm",
+        "Created a user-friendly interface"
+      ]
     },
     {
       "title": "Image to Text Service (Deep Learning)",

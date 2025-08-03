@@ -13,7 +13,7 @@
 
 // CV setting
 #let theme = rgb("#26428b")
-#let font = "Libertinus Serif"
+#let font = "New Computer Modern"
 #let fontSize = 11pt
 #let lang = "en"
 #let margin = (
@@ -28,7 +28,7 @@
   author: name,
   location: "",
   contacts: contacts,
-  summary: align(right)[#text(size: 8pt, fill: gray)[Last updated: #datetime.today().display("[month repr:long] [day], [year]")]],
+  summary: summary,
   theme-color: theme,
   font: font,
   font-size: fontSize,
@@ -36,33 +36,13 @@
   margin: margin,
 )
 
-// Research Interest
-= Research Interest
-#align(left)[#data.research_interest]
-
 // skills
 = Skills
 #skills((
-  ("Programming Languages", (
-    [Python (advanced)],
-    [Java (intermediate)],
-    [C++ (basic)],
-  )),
-  ("Scientific Skills", (
-    [Quantum Chemistry: Gaussian, ORCA],
-    [Machine Learning: TensorFlow, Keras],
-    [Visualization Tools: PyMol, matplotlib],
-  )),
-  ("Code Development", (
-    [Version Control: Git],
-    [Python packaging & deployment],
-    [Containerization: Docker],
-    [Cloud Services: AWS, Azure],
-  )),
-  ("Large Data Processing", (
-    [File Formats: CSV, JSON],
-    [Data Collection: Web Scraping, APIs],
-  )),
+  ("Programming Languages", data.skills.programming_languages),
+  ("Scientific Skills", data.skills.scientific_skills),
+  ("Code Development", data.skills.code_development),
+  ("Large Data Processing", data.skills.large_data_processing),
 ))
 
 // projects
@@ -70,11 +50,11 @@
 #for proj in data.projects {
   exp(
     title: if "link" in proj { link(proj.link)[#proj.title] } else { proj.title },
-    details: list(..proj.achievements.map(item => [- #item])),
+    details: list(..proj.achievements.map(item => [• #item])),
   )
 }
 
-// research experiance 
+// research experiance
 = Research Experience
 #for experience in data.research_experience {
   exp(
@@ -82,29 +62,29 @@
     organization: experience.lab,
     date: experience.duration,
     location: experience.advisor,
-    details: list(..experience.achievements.map(item => [- #item])),
+    details: list(..experience.achievements.map(item => [• #item])),
   )
 }
 
-// education
+// eduation
 = Education
 #edu(
   institution: data.education.university,
   date: data.education.duration,
   location: "",
-  degrees: (
-    (data.education.degree, "Major"),
-  ),
+  degrees: ((data.education.degree, "Major")),
   gpa: data.education.gpa,
   extra: "",
 )
 
 // awards and scholarship
-= Awards & Scholarships
+= Awards and Scholarships
 #for award in data.awards_scholarships {
   exp(
     title: award.name,
-    details: list(award.institution + ", " + award.year + ", " + award.amount),
+    organization: award.institution,
+    date: award.year,
+    details: list("Amount: " + award.amount),
   )
 }
 
@@ -113,7 +93,7 @@
 #exp(
   title: data.additional_activity.activity,
   date: data.additional_activity.duration,
-  details: list([- #data.additional_activity.description]),
+  details: list(data.additional_activity.description),
 )
 
 // presentations
@@ -121,7 +101,7 @@
 #for pres in data.presentations {
   exp(
     title: pres.title,
-    details: list([- #pres.event, #pres.date]),
+    details: list(pres.event + ", " + pres.date),
   )
 }
 
@@ -130,5 +110,5 @@
 #exp(
   title: data.military_service.branch + " (" + data.military_service.rank + ")",
   date: data.military_service.duration,
-  details: list([- Completed mandatory military service.]),
+  details: list("Completed mandatory military service."),
 )
