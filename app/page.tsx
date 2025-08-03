@@ -109,10 +109,8 @@ export default function CVPage() {
             </section>
           </div>
         ) : activeTab === "pdf" ? (
-          <div className="flex justify-center">
-            <div className="w-full max-w-md">
-              <PDFViewer />
-            </div>
+          <div className="w-full">
+            <PDFViewer />
           </div>
         ) : (
           <ProjectGallery projectHighlights={highlights.project_highlights} />
