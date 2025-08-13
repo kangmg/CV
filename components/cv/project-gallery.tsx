@@ -17,11 +17,13 @@ export function ProjectGallery({ projectHighlights }: ProjectGalleryProps) {
             className="group overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300"
           >
             <div className="relative overflow-hidden">
-              <img
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
-                className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105"
-              />
+              <a href={project.image || "/placeholder.svg"} target="_blank" rel="noopener noreferrer" className="block">
+                <img
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  className="w-full aspect-square object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+              </a>
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
             </div>
 

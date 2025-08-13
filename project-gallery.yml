@@ -56,7 +56,7 @@ project_highlights:
   custom_tag: RDF, Ionic Liquid
   is_team: false
 - title: Butene Rotational Conversion
-  image: /butene_rxn.gif?height=300&width=300
+  image: asset/butene_rxn.gif?height=300&width=300
   period: 2025.06
   descriptions:
   - Calculated butene rotational conversion using Meta's UMA ML potential
@@ -78,4 +78,12 @@ project_highlights:
   - Performed EDA calculation for butadiene dihedral rotation using sobEDA
   - Obtained contrasting results between relaxed scan and frozen scan
   custom_tag: Energy Decomposition Analysis, sobEDA
+  is_team: false
+- title: Molecular Orbital Animation
+  image: asset/mo_animation.gif?height=300&width=300
+  period: 2025.07
+  descriptions:
+  - Created custom MO viewer using cube files
+  - Generated surfaces via marching cubes and visualized with PyVista
+  custom_tag: Molecular Orbital, PyVista
   is_team: false
