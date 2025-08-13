@@ -32,12 +32,13 @@ import projectHighlightsData from "@/data/project-gallery.json"
 const cvSections = [
   { id: "research-interest", title: "Research Interest", icon: <Microscope className="h-4 w-4" /> },
   { id: "technical-skills", title: "Technical Skills", icon: <Code2 className="h-4 w-4" /> },
-  { id: "projects", title: "Projects", icon: <FolderOpen className="h-4 w-4" /> },
   { id: "research-experience", title: "Research Experience", icon: <FlaskConical className="h-4 w-4" /> },
   { id: "education", title: "Education", icon: <GraduationCap className="h-4 w-4" /> },
-  { id: "awards-scholarships", title: "Awards & Scholarships", icon: <Trophy className="h-4 w-4" /> },
+  { id: "projects", title: "Projects", icon: <FolderOpen className="h-4 w-4" /> },
+  { id: "scholarships", title: "Scholarships", icon: <Trophy className="h-4 w-4" /> },
+  { id: "awards", title: "Awards & Honors", icon: <Trophy className="h-4 w-4" /> },
+  { id: "grants", title: "Research Grants", icon: <Trophy className="h-4 w-4" /> },
   { id: "additional-activity", title: "Additional Activity", icon: <BookOpen className="h-4 w-4" /> },
-  { id: "presentations", title: "Presentations", icon: <Presentation className="h-4 w-4" /> },
   { id: "military-service", title: "Military Service", icon: <Shield className="h-4 w-4" /> },
 ]
 
@@ -71,9 +72,6 @@ export default function CVPage() {
             <section id="technical-skills" className="scroll-mt-24">
               <Skills skills={data.skills} />
             </section>
-            <section id="projects" className="scroll-mt-24">
-              <Projects projects={data.projects} />
-            </section>
             <section id="research-experience" className="scroll-mt-24">
               <ResearchExperience experiences={data.research_experience} />
             </section>
@@ -85,10 +83,27 @@ export default function CVPage() {
                 showOnlyEducation={true}
               />
             </section>
-            <section id="awards-scholarships" className="scroll-mt-24">
+            <section id="projects" className="scroll-mt-24">
+              <Projects projects={data.projects} />
+            </section>
+            <section id="scholarships" className="scroll-mt-24">
+              <Awards 
+                awards={[]} 
+                scholarships={data.scholarships} 
+                grants={[]} 
+              />
+            </section>
+            <section id="awards" className="scroll-mt-24">
               <Awards 
                 awards={data.awards_honors} 
-                scholarships={data.scholarships} 
+                scholarships={[]} 
+                grants={[]} 
+              />
+            </section>
+            <section id="grants" className="scroll-mt-24">
+              <Awards 
+                awards={[]} 
+                scholarships={[]} 
                 grants={data.grants} 
               />
             </section>
@@ -100,9 +115,11 @@ export default function CVPage() {
                 showOnlyAdditionalActivity={true}
               />
             </section>
+            {/* Presentations section commented out to match PDF version
             <section id="presentations" className="scroll-mt-24">
               <Presentations presentations={data.presentations} />
             </section>
+            */}
             <section id="military-service" className="scroll-mt-24">
               <AdditionalInfo
                 education={data.education}
