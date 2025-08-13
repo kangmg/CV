@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Microscope } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
 
 interface ResearchInterestProps {
   content: string
@@ -18,14 +19,15 @@ export function ResearchInterest({ content, keywords }: ResearchInterestProps) {
       <CardContent className="pt-0">
         <p className="text-muted-foreground leading-relaxed text-sm">{content}</p>
         {keywords && keywords.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="mt-4 flex flex-wrap gap-1.5">
             {keywords.map((keyword, index) => (
-              <code
+              <Badge
                 key={index}
-                className="bg-gray-200 text-gray-800 px-2 py-1 rounded text-xs font-mono"
+                variant="secondary"
+                className="bg-muted text-muted-foreground hover:bg-muted/80 transition-colors text-xs py-0.5"
               >
                 {keyword}
-              </code>
+              </Badge>
             ))}
           </div>
         )}

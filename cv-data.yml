@@ -82,7 +82,7 @@ projects:
   extra: []
   achievements:
   - Implemented ASE calculator interfaces for g-xTB, PySCF, MLatom, and XequiNet
-  - Developed optimizer wrappers for aseMCD and GeomeTRIC to enhance integration of
+  - Developed optimizer wrappers for asemcd and geomeTRIC to enhance integration of
     ASE-centered workflows
 - title: Distortion Interaction Analysis
   link: ''

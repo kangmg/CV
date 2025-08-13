@@ -1,6 +1,6 @@
 project_highlights:
 - title: Molecular Visualizer Preview (aseview v2)
-  image: /asset/styles.png?height=300&width=300
+  image: asset/styles.png?height=300&width=300
   period: 2025.07
   descriptions:
   - Added diverse visualization styles
@@ -8,7 +8,7 @@ project_highlights:
   custom_tag: Molecular Visualizer
   is_team: false
 - title: Molecular Visualizer (aseview v1)
-  image: /asset/phonon.gif?height=300&width=300
+  image: asset/phonon.gif?height=300&width=300
   period: 2025.06
   descriptions:
   - Phonon visualization of graphene
@@ -16,7 +16,7 @@ project_highlights:
   custom_tag: Phonon, Visualizer
   is_team: false
 - title: Distortion Interaction Analysis
-  image: /asset/asedias.png?height=300&width=300
+  image: asset/asedias.png?height=300&width=300
   period: 2024.11
   descriptions:
   - Compared computational results at different levels using asedias
@@ -24,7 +24,7 @@ project_highlights:
   custom_tag: Distortion Interaction Analysis, asedias
   is_team: false
 - title: NanoReactor
-  image: /asset/carbon_md.gif?height=300&width=300
+  image: asset/carbon_md.gif?height=300&width=300
   period: 2024.10
   descriptions:
   - Simulated concentration-dependent carbon polymerization using ANI ML potential
@@ -32,7 +32,7 @@ project_highlights:
   custom_tag: Molecular Dynamics, ML Potential
   is_team: true
 - title: CYP3A4 QSAR
-  image: /asset/QSAR.png?height=300&width=300
+  image: asset/QSAR.png?height=300&width=300
   period: 2025.07
   descriptions:
   - Trained encoder-based neural network for drug discovery competition and visualized with UMAP
@@ -40,7 +40,7 @@ project_highlights:
   custom_tag: QSAR, Encoder
   is_team: false
 - title: MD Population Analysis
-  image: /asset/population_analysis.gif?height=300&width=300
+  image: asset/population_analysis.gif?height=300&width=300
   period: 2025.05
   descriptions:
   - Generated 2D scan PES for BMIM structure using force field and ML potential
@@ -48,7 +48,7 @@ project_highlights:
   custom_tag: ML Potential, Force Field, Molecular Dynamics
   is_team: false
 - title: RDF Analysis
-  image: /asset/RDF_analysis.png?height=300&width=300
+  image: asset/RDF_analysis.png?height=300&width=300
   period: 2025.08
   descriptions:
   - Analyzed BMIM-BF4 RDF from RTIL molecular dynamics calculations
@@ -64,7 +64,7 @@ project_highlights:
   custom_tag: UMA, Transition State, IRC
   is_team: false
 - title: Gibbs Energy Profile
-  image: /asset/gibbs.jpg?height=300&width=300
+  image: asset/gibbs.jpg?height=300&width=300
   period: 2025.06
   descriptions: 
   - Studied reaction mechanism of homogeneous transition metal catalyst in solution using DFT
@@ -72,7 +72,7 @@ project_highlights:
   custom_tag: DFT, Gibbs Energy Profile
   is_team: true
 - title: Energy Decomposition Analysis
-  image: /asset/eda.png?height=300&width=300
+  image: asset/eda.png?height=300&width=300
   period: 2023
   descriptions: 
   - Performed EDA calculation for butadiene dihedral rotation using sobEDA
