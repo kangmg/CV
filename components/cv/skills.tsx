@@ -4,19 +4,17 @@ import { Code2 } from "lucide-react"
 
 interface SkillsProps {
   skills: {
-    programming_languages: string[]
-    scientific_skills: string[]
-    code_development: string[]
-    large_data_processing: string[]
+    Computational_Chemistry: string[]
+    Scientific_Skills: string[]
+    Development_Skills: string[]
   }
 }
 
 export function Skills({ skills }: SkillsProps) {
   const skillCategories = [
-    { title: "Programming Languages", items: skills.programming_languages },
-    { title: "Scientific Skills", items: skills.scientific_skills },
-    { title: "Code Development", items: skills.code_development },
-    { title: "Large Data Processing", items: skills.large_data_processing },
+    { title: "Computational Chemistry", items: skills.Computational_Chemistry },
+    { title: "Scientific Skills", items: skills.Scientific_Skills },
+    { title: "Development Skills", items: skills.Development_Skills },
   ]
 
   return (

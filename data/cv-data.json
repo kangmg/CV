@@ -1,130 +1,173 @@
 {
-  "update": "2024-01-15",
-  "name": "dummy name",
+  "update": "2025-08-11",
+  "name": "Mingi KANG",
   "title": "Computational Chemistry & Machine Learning Researcher",
-  "github": "github.com/dummy",
-  "email": "johndoe@example.com",
-  "blog": "blog.example.com",
+  "github": "github.com/kangmg",
+  "email": "kangmg@korea.ac.kr",
+  "blog": "kangmg.github.io",
   "research_interest": "My research focuses on various areas of computational chemistry and machine learning applications in molecular simulations. I am particularly interested in developing new methods for accurate and efficient simulations of complex chemical systems.",
   "skills": {
-    "programming_languages": [
-      "Python (advanced)",
-      "Java (intermediate)",
-      "C++ (basic)"
+    "Computational_Chemistry": [
+      "Ab initio calculaton: Psi4, PySCF, GAMESS-US, Gaussian, ORCA, CP2K etc.",
+      "Molecular Dynamics: OpenMM, ASE",
+      "Modeling & Simulation: scikit-learn, pytorch, Training ML potentials"
     ],
-    "scientific_skills": [
-      "Quantum Chemistry: Gaussian, ORCA, etc.",
-      "Machine Learning: TensorFlow, Keras",
-      "Visualization Tools: PyMol, matplotlib, etc."
+    "Scientific_Skills": [
+      "Job scripting & submission in HPC server (PBS, SGE) via SSH",
+      "Dataset construction & handling (HDF5, SQL)",
+      "Data visualization"
     ],
-    "code_development": [
-      "Version Control: Git",
+    "Development_Skills": [
+      "Workflow automation",
       "Python packaging & deployment",
-      "Containerization: Docker",
-      "Cloud Services: AWS, Azure"
-    ],
-    "large_data_processing": [
-      "File Formats: CSV, JSON",
-      "Data Collection: Web Scraping, APIs"
+      "Git, Cloud service, API"
+      
     ]
   },
   "research_experience": [
-    {
-      "title": "Research Project A",
-      "duration": "January 2020 - June 2020",
-      "lab": "Lab of Computational Chemistry",
-      "advisor": "Prof. Smith",
-      "achievements": [
-        "Conducted experiments on X",
-        "Analyzed data using Y method",
-        "Published results in Z journal"
-      ]
-    },
-    {
-      "title": "Research Project B",
-      "duration": "July 2020 - December 2020",
-      "lab": "Lab of Machine Learning",
-      "advisor": "Prof. Johnson",
-      "achievements": [
-        "Developed a new algorithm for Q",
-        "Implemented the algorithm in Python",
-        "Presented findings at R conference"
-      ]
-    },
-    {
-      "title": "Research Project C",
-      "duration": "January 2021 - June 2021",
-      "lab": "Lab of Data Science",
-      "advisor": "Prof. Lee",
-      "achievements": [
-        "Collected and analyzed large datasets",
-        "Developed a predictive model for S",
-        "Collaborated with industry partners"
-      ]
-    }
+   {
+     "title": "Bachelor's Thesis",
+     "duration": "March 2025 - Present",
+     "lab": "Lab of Ultrafast Spectroscopy, Korea University (Sejong)",
+     "advisor": "Prof. Jae Yoon Shin",
+     "achievements": [
+       "Investigated kinetic behavior of ionic liquids in porous filters (Polyethersulfone and Anodisc)",
+       "Performed molecular dynamics calculations using force fields and fine-tuned ML potentials",
+       "Built simulation systems and analyzed dynamic trajectories to determine diffusion coefficients"
+     ]
+   },
+   {
+     "title": "CURT Research Program",
+     "duration": "July 2025 - Present",
+     "lab": "Laboratory of Inorganic Chemistry, Korea University (Sejong)",
+     "advisor": "Prof. Ho-Jin Son",
+     "achievements": [
+       "Studied reaction mechanisms of homogeneous transition metal catalysts using DFT and MLP methods",
+       "Computed Gibbs energy profiles through various levels of DFT",
+       "Developed automated job submission scripts and established workflows for Gibbs energy profile calculation"
+     ]
+   },
+   {
+     "title": "Winter Internship",
+     "duration": "January 2025 - February 2025",
+     "lab": "The Meta Lab, KENTECH",
+     "advisor": "Prof. Geun Ho Gu",
+     "achievements": [
+       "Fine-tuned universal MLP models for heterogeneous catalyst systems",
+       "Reproduced surface adsorption energies using MLP and compared results with DFT"
+     ]
+   },
+   {
+     "title": "Project Semester",
+     "duration": "July 2024 - December 2024",
+     "lab": "Lab of Ultrafast Spectroscopy, Korea University (Sejong)",
+     "advisor": "Prof. Jae Yoon Shin",
+     "achievements": [
+       "Collected and preprocessed organic molecule dataset (10K samples) using the PubChem API",
+       "Performed large-scale ab initio calculations (50K) and built normal mode perturbed molecular dataset",
+       "Fine-tuned ANI Machine Learning Potentials (MLP) to improve accuracy in transition state regions",
+       "Conducted MLP-based molecular dynamics simulations of carbon polymerizations and acetylene annulation reactions",
+       "Developed Python package for MLP-based distortion interaction analysis calculations"
+     ]
+   },
+   {
+     "title": "X-Corps Research Program",
+     "duration": "November 2019 - April 2020",
+     "lab": "Biomedical Nano-engineering Lab, Korea University (Sejong)",
+     "advisor": "Prof. Gyudo Lee",
+     "achievements": [
+       "Developed paper-based colorimetric biosensor for ethanol concentration measurement and color quantification",
+       "Synthesized polyaniline (PANI) nanoparticles and immobilized ADH on PANI-coated paper",
+       "Proposed RGB color picker method for pH prediction and studied lighting brightness effect corrections"
+     ]
+   }
   ],
   "projects": [
     {
-      "title": "Personal Project A",
+      "title": "ASE Community Code Development",
+      "link": "",
+      "duration": "",
+      "extra": [],
       "achievements": [
-        "Developed a tool for Z",
-        "Implemented a new algorithm",
-        "Created a user-friendly interface"
+        "Implemented ASE calculator interfaces for g-xTB, PySCF, MLatom, and XequiNet",
+        "Developed optimizer wrappers for aseMCD and GeomeTRIC to enhance integration of ASE-centered workflows"
       ]
     },
     {
-      "title": "Image to Text Service (Deep Learning)",
-      "link": "Github",
-      "duration": "June 2021",
-      "event": "2021 Data Science Hackathon",
+      "title": "Distortion Interaction Analysis",
+      "link": "",
+      "duration": "",
+      "extra": [],
       "achievements": [
-        "Proposed the project idea and managed the team",
-        "Collected and preprocessed image data",
-        "Trained a CNN model for image classification",
-        "Deployed the service using Flask"
+        "Implemented ASE interfaces for distortion interaction analysis calculations",
+        "Enabled flexible computations and streamlined computational workflows"
       ]
     },
     {
-      "title": "Voice Recognition System (Deep Learning)",
-      "link": "Github",
-      "duration": "September 2021 - May 2022",
-      "event": "2022 AI Challenge",
-      "mentor": "Dr. Kim",
+      "title": "randatoms",
+      "link": "",
+      "duration": "",
+      "extra": [],
       "achievements": [
-        "Studied state-of-the-art voice recognition techniques",
-        "Developed a strategy for data augmentation",
-        "Preprocessed audio data and extracted features",
-        "Trained and evaluated deep learning models"
+        "Developed a molecular filtering package using pickle-based metadata caching",
+        "Used indexed HDF5 storage to enable fast random access and optimize I/O performance for large-scale molecular datasets"
+      ]
+    },
+    {
+      "title": "Molecular Visualizer",
+      "link": "",
+      "duration": "",
+      "extra": [],
+      "achievements": [
+        "Developing molecular visualization tools including ASE-native viewer aseview and OverlayMol",
+        "Supports visualization of molecular normal modes, overlay diagrams, and animations with publication-ready quality"
+      ]
+    },
+    {
+      "title": "Image to Music Recommendation Service",
+      "link": "",
+      "duration": "June 2024",
+      "extra": [
+        "Like Lion School DATATON"
+      ],
+      "achievements": [
+        "Proposed the project topic and managed its scheduling, planning, and overall design",
+        "Collected various types of data using APIs and web crawling, and performed data preprocessing",
+        "Designed the service architecture, developed, and deployed the website using Streamlit"
+      ]
+    },
+    {
+      "title": "Deepfake Voice Detection",
+      "link": "",
+      "duration": "Sep 2024 - May 2025",
+      "extra": [
+        "Like Lion School",
+        "Mentor: Dongbin Na"
+      ],
+      "achievements": [
+        "Proposed a strategy for generating deepfake voice data",
+        "Preprocessed audio data by adjusting sampling rates and converting file formats to wav",
+        "Transformed audio data into Mel spectrogram for modeling"
       ]
     }
   ],
   "presentations": [
     {
-      "title": "Introduction to Quantum Chemistry",
-      "event": "Seminar Series, Department of Chemistry",
-      "date": "May 2021"
+      "title": "-",
+      "event": "-",
+      "date": "-"
     },
     {
-      "title": "Machine Learning in Chemistry",
-      "event": "Annual Chemistry Conference",
-      "date": "March 2022"
-    },
-    {
-      "title": "Data Visualization Techniques",
-      "event": "Workshop on Data Science",
-      "date": "November 2022"
-    },
-    {
-      "title": "Applications of Deep Learning",
-      "event": "AI Symposium",
-      "date": "June 2023"
+      "title": "-",
+      "event": "-",
+      "date": "-"
     }
   ],
   "education": {
-    "university": "Example University",
-    "duration": "September 2018 - June 2022",
-    "degree": "B.S. Chemistry",
-    "gpa": "(3.8, 4.0) / 4.0"
+    "university": "Korea University (Sejong)",
+    "duration": "March 2019 - Present",
+    "degree": "B.S. in Advanced Material Chemistry",
+    "gpa": "4.12 / 4.5"
   },
   "military_service": {
     "branch": "Country's Army",
@@ -136,24 +179,33 @@
     "duration": "February 2023 - July 2023",
     "description": "Completed a 6-month intensive course on data science and machine learning"
   },
-  "awards_scholarships": [
+  "awards_honors": [
     {
-      "name": "Undergraduate Research Grant",
-      "institution": "Korea University",
-      "year": "2024",
-      "amount": "KRW 1,500,000"
-    },
+      "name": "Excellent Research Report Award",
+      "institution": "S-CURT Research Program, Korea University",
+      "year": "2025"
+    }
+  ],
+  "scholarships": [
     {
       "name": "Chi-Woo Lee Scholarship",
       "institution": "Korea University",
-      "year": "2023",
+      "year": "2025",
       "amount": "KRW 5,000,000"
     },
     {
       "name": "Academic Excellence Scholarship",
       "institution": "Korea University",
-      "year": "2022",
+      "year": "2025",
       "amount": "KRW 2,350,000"
+    }
+  ],
+  "grants": [
+    {
+      "name": "Project Semester Research Grant",
+      "institution": "Korea University",
+      "year": "2024",
+      "amount": "KRW 1,500,000"
     }
   ]
 }

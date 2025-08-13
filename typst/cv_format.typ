@@ -1,7 +1,7 @@
 #import "@preview/clickworthy-resume:1.0.1": *
 
 // read JSON data
-#let data = json("../data/cv-data.json")
+#let data = json("./cv-data.json")
 
 // personal info
 #let name = data.name
@@ -42,37 +42,12 @@
 
 // skills
 = Skills
-#skills((
-  ("Programming Languages", (
-    [Python (advanced)],
-    [Java (intermediate)],
-    [C++ (basic)],
-  )),
-  ("Scientific Skills", (
-    [Quantum Chemistry: Gaussian, ORCA],
-    [Machine Learning: TensorFlow, Keras],
-    [Visualization Tools: PyMol, matplotlib],
-  )),
-  ("Code Development", (
-    [Version Control: Git],
-    [Python packaging & deployment],
-    [Containerization: Docker],
-    [Cloud Services: AWS, Azure],
-  )),
-  ("Large Data Processing", (
-    [File Formats: CSV, JSON],
-    [Data Collection: Web Scraping, APIs],
-  )),
-))
-
-// projects
-= Projects
-#for proj in data.projects {
-  exp(
-    title: if "link" in proj { link(proj.link)[#proj.title] } else { proj.title },
-    details: list(..proj.achievements.map(item => [- #item])),
-  )
-}
+#for (category, items) in data.skills [
+  *#(category.replace("_", " "))*
+  #for item in items [
+    - #item
+  ]
+]
 
 // research experiance 
 = Research Experience
@@ -92,21 +67,54 @@
   institution: data.education.university,
   date: data.education.duration,
   location: "",
-  degrees: (
-    (data.education.degree, "Major"),
-  ),
+//  degrees: (
+//    (data.education.degree, "Major"),
+//  ),
   gpa: data.education.gpa,
-  extra: "",
+  extra: data.education.degree,
 )
 
-// awards and scholarship
-= Awards & Scholarships
-#for award in data.awards_scholarships {
+
+// Projects
+= Projects
+#for project in data.projects {
   exp(
-    title: award.name,
-    details: list(award.institution + ", " + award.year + ", " + award.amount),
+    title: project.title,
+    organization: if project.link != "" { link(project.link)[#project.link] } else { "" },
+    date: project.duration,
+    details: list(..project.achievements.map(item => [- #item])),
   )
 }
+
+// Scholarships
+= Scholarships
+#for scholarship in data.scholarships {
+  exp(
+    title: scholarship.name,
+    details: list(scholarship.institution + ", " + scholarship.year + ", " + scholarship.amount),
+  )
+}
+
+// Awards
+= Awards & Honors
+#for award in data.awards_honors {
+  exp(
+    title: award.name,
+    details: list(award.institution + ", " + award.year),
+  )
+}
+
+
+// Grants
+= Research Grants
+#for grant in data.grants {
+  exp(
+    title: grant.name,
+    details: list(grant.institution + ", " + grant.year + ", " + grant.amount),
+  )
+}
+
+
 
 // additional 
 = Additional Activity
@@ -117,13 +125,13 @@
 )
 
 // presentations
-= Presentations
-#for pres in data.presentations {
-  exp(
-    title: pres.title,
-    details: list([- #pres.event, #pres.date]),
-  )
-}
+//= Presentations
+//#for pres in data.presentations {
+//  exp(
+//    title: pres.title,
+//    details: list([- #pres.event, #pres.date]),
+//  )
+//}
 
 // military
 = Military Service

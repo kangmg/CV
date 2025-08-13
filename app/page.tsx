@@ -11,7 +11,7 @@ import { AdditionalInfo } from "@/components/cv/additional-info"
 import { ProjectGallery } from "@/components/cv/project-gallery"
 import { TopNavigation } from "@/components/top-navigation"
 import { PageHeader } from "@/components/page-header"
-import { AwardsScholarships } from "@/components/cv/awards-scholarships"
+import { Awards } from "@/components/cv/awards"
 import { ScrollProgress } from "@/components/scroll-progress"
 import { PDFViewer } from "@/components/pdf-viewer"
 import {
@@ -86,7 +86,11 @@ export default function CVPage() {
               />
             </section>
             <section id="awards-scholarships" className="scroll-mt-24">
-              <AwardsScholarships awards={data.awards_scholarships} />
+              <Awards 
+                awards={data.awards_honors} 
+                scholarships={data.scholarships} 
+                grants={data.grants} 
+              />
             </section>
             <section id="additional-activity" className="scroll-mt-24">
               <AdditionalInfo

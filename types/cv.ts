@@ -7,10 +7,9 @@ export interface CVData {
   blog: string
   research_interest: string
   skills: {
-    programming_languages: string[]
-    scientific_skills: string[]
-    code_development: string[]
-    large_data_processing: string[]
+    Computational_Chemistry: string[]
+    Scientific_Skills: string[]
+    Development_Skills: string[]
   }
   research_experience: ResearchExperience[]
   projects: Project[]
@@ -18,7 +17,9 @@ export interface CVData {
   education: Education
   military_service: MilitaryService
   additional_activity: AdditionalActivity
-  awards_scholarships: AwardScholarship[]
+  awards_honors: Award[]
+  scholarships: Award[]
+  grants: Award[]
 }
 
 export interface ProjectHighlightsData {
@@ -37,8 +38,7 @@ export interface Project {
   title: string
   link?: string
   duration?: string
-  event?: string
-  mentor?: string
+  extra?: string[]
   achievements: string[]
 }
 
@@ -76,7 +76,7 @@ export interface AdditionalActivity {
   description: string
 }
 
-export interface AwardScholarship {
+export interface Award {
   name: string
   institution: string
   year: string
