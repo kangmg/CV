@@ -3,9 +3,10 @@ import { Microscope } from "lucide-react"
 
 interface ResearchInterestProps {
   content: string
+  keywords?: string[]
 }
 
-export function ResearchInterest({ content }: ResearchInterestProps) {
+export function ResearchInterest({ content, keywords }: ResearchInterestProps) {
   return (
     <Card className="border-border bg-card shadow-md hover:shadow-lg transition-shadow duration-300">
       <CardHeader className="pb-3">
@@ -16,6 +17,18 @@ export function ResearchInterest({ content }: ResearchInterestProps) {
       </CardHeader>
       <CardContent className="pt-0">
         <p className="text-muted-foreground leading-relaxed text-sm">{content}</p>
+        {keywords && keywords.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {keywords.map((keyword, index) => (
+              <code
+                key={index}
+                className="bg-gray-200 text-gray-800 px-2 py-1 rounded text-xs font-mono"
+              >
+                {keyword}
+              </code>
+            ))}
+          </div>
+        )}
       </CardContent>
     </Card>
   )

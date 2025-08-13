@@ -6,6 +6,7 @@ export interface CVData {
   email: string
   blog: string
   research_interest: string
+  Keywords?: string[]
   skills: {
     Computational_Chemistry: string[]
     Scientific_Skills: string[]

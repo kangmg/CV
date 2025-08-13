@@ -67,7 +67,7 @@ export default function CVPage() {
         {activeTab === "cv" ? (
           <div className="space-y-4">
             <section id="research-interest" className="scroll-mt-24">
-              <ResearchInterest content={data.research_interest} />
+              <ResearchInterest content={data.research_interest} keywords={data.Keywords} />
             </section>
             <section id="technical-skills" className="scroll-mt-24">
               <Skills skills={data.skills} />

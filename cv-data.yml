@@ -4,10 +4,10 @@ title: Computational Chemistry & Machine Learning Researcher
 github: github.com/kangmg
 email: kangmg@korea.ac.kr
 blog: kangmg.github.io
-research_interest: My research focuses on various areas of computational chemistry
-  and machine learning applications in molecular simulations. I am particularly interested
-  in developing new methods for accurate and efficient simulations of complex chemical
-  systems.
+research_interest: My research interests focus on understanding chemical phenomena at the microscopic 
+  level through computational chemistry methodologies and accelerating these investigations using AI. 
+  Based on this fundamental understanding, I aim to explore and design novel materials and catalysts.
+Keywords : [Ab initio, Molecular Dynamics, ML Potential, Machine Learning, Screening, Catalyst, Materials Design]
 skills:
   Computational_Chemistry:
   - 'Ab initio calculaton: Psi4, PySCF, GAMESS-US, Gaussian, ORCA, CP2K etc.'
