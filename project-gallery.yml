@@ -1,55 +1,81 @@
 project_highlights:
-- title: Neural Network Visualization Tool
-  image: /placeholder.svg?height=300&width=300
-  period: 2023.03 - 2023.08
+- title: Molecular Visualizer Preview (aseview v2)
+  image: /asset/styles.png?height=300&width=300
+  period: 2025.07
   descriptions:
-  - Developed an interactive web-based tool for visualizing neural network architectures
-  - Implemented real-time training progress monitoring with dynamic loss curves
-  - Created intuitive drag-and-drop interface for network design and modification
-  custom_tag: Deep Learning
+  - Added diverse visualization styles
+  - Ongoing project
+  custom_tag: Molecular Visualizer
   is_team: false
-- title: Molecular Dynamics Simulation Platform
-  image: /placeholder.svg?height=300&width=300
-  period: 2022.09 - 2023.02
+- title: Molecular Visualizer (aseview v1)
+  image: /asset/phonon.gif?height=300&width=300
+  period: 2025.06
   descriptions:
-  - Built scalable simulation platform for large-scale molecular dynamics calculations
-  - Optimized computational algorithms achieving 40% performance improvement
-  - Integrated machine learning models for predictive analysis of molecular behavior
-  custom_tag: Computational Chemistry
-  is_team: true
-- title: AI-Powered Research Assistant
-  image: /placeholder.svg?height=300&width=300
-  period: 2023.09 - 2024.01
-  descriptions:
-  - Designed and implemented intelligent research paper analysis system
-  - Developed natural language processing pipeline for automated literature review
-  - Created knowledge graph visualization for research topic exploration
-  custom_tag: NLP
+  - Phonon visualization of graphene
+  - Phonons calculated using AIMNet2 ML potential
+  custom_tag: Phonon, Visualizer
   is_team: false
-- title: Quantum Computing Simulator
-  image: /placeholder.svg?height=300&width=300
-  period: 2022.01 - 2022.06
+- title: Distortion Interaction Analysis
+  image: /asset/asedias.png?height=300&width=300
+  period: 2024.11
   descriptions:
-  - Implemented quantum circuit simulator with support for major quantum gates
-  - Developed educational interface for quantum algorithm visualization
-  - Collaborated with physics department to validate simulation accuracy
-  custom_tag: Quantum Computing
+  - Compared computational results at different levels using asedias
+  - Analyzed Wittig and Diels-Alder reactions
+  custom_tag: Distortion Interaction Analysis, asedias
+  is_team: false
+- title: NanoReactor
+  image: /asset/carbon_md.gif?height=300&width=300
+  period: 2024.10
+  descriptions:
+  - Simulated concentration-dependent carbon polymerization using ANI ML potential
+  - Confirmed formation of different allotropes based on concentration
+  custom_tag: Molecular Dynamics, ML Potential
   is_team: true
-- title: Automated Lab Equipment Controller
-  image: /placeholder.svg?height=300&width=300
-  period: 2023.06 - 2023.12
+- title: CYP3A4 QSAR
+  image: /asset/QSAR.png?height=300&width=300
+  period: 2025.07
   descriptions:
-  - Designed IoT-based system for remote laboratory equipment monitoring
-  - Implemented automated data collection and analysis pipeline
-  - Reduced manual intervention by 80% through intelligent scheduling algorithms
-  custom_tag: IoT
+  - Trained encoder-based neural network for drug discovery competition and visualized with UMAP
+  - Continuous gradients effectively capture structure-activity relationships
+  custom_tag: QSAR, Encoder
+  is_team: false
+- title: MD Population Analysis
+  image: /asset/population_analysis.gif?height=300&width=300
+  period: 2025.05
+  descriptions:
+  - Generated 2D scan PES for BMIM structure using force field and ML potential
+  - Analyzed time-dependent population from molecular dynamics trajectories
+  custom_tag: ML Potential, Force Field, Molecular Dynamics
+  is_team: false
+- title: RDF Analysis
+  image: /asset/RDF_analysis.png?height=300&width=300
+  period: 2025.08
+  descriptions:
+  - Analyzed BMIM-BF4 RDF from RTIL molecular dynamics calculations
+  - Confirmed consistency with previous literature results
+  custom_tag: RDF, Ionic Liquid
+  is_team: false
+- title: Butene Rotational Conversion
+  image: /butene_rxn.gif?height=300&width=300
+  period: 2025.06
+  descriptions:
+  - Calculated butene rotational conversion using Meta's UMA ML potential
+  - Used Sella for transition state and IRC calculations
+  custom_tag: UMA, Transition State, IRC
+  is_team: false
+- title: Gibbs Energy Profile
+  image: /asset/gibbs.jpg?height=300&width=300
+  period: 2025.06
+  descriptions: 
+  - Studied reaction mechanism of homogeneous transition metal catalyst in solution using DFT
+  - Used UMA ML potential for preliminary optimization of transition structures
+  custom_tag: DFT, Gibbs Energy Profile
   is_team: true
-- title: Chemical Reaction Predictor
-  image: /placeholder.svg?height=300&width=300
-  period: 2022.03 - 2022.08
-  descriptions:
-  - Developed machine learning model for predicting chemical reaction outcomes
-  - Trained on large-scale reaction database with 95% accuracy achievement
-  - Created user-friendly web interface for researchers and students
-  custom_tag: Machine Learning
+- title: Energy Decomposition Analysis
+  image: /asset/eda.png?height=300&width=300
+  period: 2023
+  descriptions: 
+  - Performed EDA calculation for butadiene dihedral rotation using sobEDA
+  - Obtained contrasting results between relaxed scan and frozen scan
+  custom_tag: Energy Decomposition Analysis, sobEDA
   is_team: false
