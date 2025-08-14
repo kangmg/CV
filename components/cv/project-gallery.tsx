@@ -34,9 +34,21 @@ export function ProjectGallery({ projectHighlights }: ProjectGalleryProps) {
                 </h3>
 
                 <div className="flex flex-wrap gap-1.5 mb-3">
-                  <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs">
-                    {project.custom_tag}
-                  </Badge>
+                  {project.keywords && project.keywords.length > 0 ? (
+                    project.keywords.map((keyword, idx) => (
+                      <Badge
+                        key={idx}
+                        variant="secondary"
+                        className="bg-primary/10 text-primary border-primary/20 text-xs"
+                      >
+                        {keyword}
+                      </Badge>
+                    ))
+                  ) : (
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs">
+                      {project.custom_tag}
+                    </Badge>
+                  )}
                   <Badge variant="outline" className="border-border text-muted-foreground text-xs">
                     {project.is_team ? (
                       <>

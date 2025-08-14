@@ -49,6 +49,7 @@ export interface ProjectHighlight {
   period: string
   descriptions: string[]
   custom_tag: string
+  keywords?: string[]
   is_team: boolean
 }
 

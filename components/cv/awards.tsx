@@ -18,9 +18,8 @@ export function Awards({ awards, scholarships, grants }: AwardsProps) {
   return (
     <Card className="border-border bg-card shadow-md hover:shadow-lg transition-shadow duration-300">
       <CardHeader className="pb-3">
-        <CardTitle className="text-xl font-semibold text-foreground flex items-center gap-2">
-          <AwardIcon className="h-5 w-5 text-primary" />
-          Awards, Scholarships & Grants
+        <CardTitle className="text-xl font-semibold text-foreground">
+          Scholarships / Awards & Honors / Research Grants
         </CardTitle>
       </CardHeader>
       <CardContent className="pt-0">
