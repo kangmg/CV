@@ -22,7 +22,7 @@ export function Awards({ awards, scholarships, grants }: AwardsProps) {
           <Card key={index} className="border-border bg-card shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
             <div className="pb-3 flex items-center gap-2 px-4">
               <category.icon className="w-5 h-5 text-primary" />
-              <h3 className="text-lg font-semibold text-foreground mb-2">
+              <h3 className="text-lg font-semibold text-foreground mb-2 leading-none">
                 {category.title}
               </h3>
             </div>
