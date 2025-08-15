@@ -16,36 +16,32 @@ export function Awards({ awards, scholarships, grants }: AwardsProps) {
   ]
 
   return (
-    <Card className="border-border bg-card shadow-md hover:shadow-lg transition-shadow duration-300">
-      <CardHeader className="pb-3">
-        <CardTitle className="text-xl font-semibold text-foreground">
-          Scholarships / Awards & Honors / Research Grants
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="pt-0">
-        <div className="space-y-6">
-          {awardCategories.map((category, index) => (
-            category.items.length > 0 && (
-              <div key={index}>
-                <h3 className="text-base font-medium text-foreground mb-3">
-                  {category.title}
-                </h3>
-                <div className="space-y-2">
-                  {category.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="flex justify-between items-start p-3 bg-muted/30 rounded-lg">
-                      <div>
-                        <p className="font-medium text-sm text-foreground">{item.name}</p>
-                        <p className="text-xs text-muted-foreground">{item.institution} • {item.year}</p>
-                      </div>
-                      <span className="text-sm font-medium text-primary">{item.amount}</span>
+    <>
+      {awardCategories.map((category, index) => (
+        category.items.length > 0 && (
+          <Card key={index} className="border-border bg-card shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
+            <CardHeader className="pb-3 flex items-center gap-2">
+              <category.icon className="w-5 h-5 text-primary" />
+              <CardTitle className="text-xl font-semibold text-foreground">
+                {category.title}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <div className="space-y-2">
+                {category.items.map((item, itemIndex) => (
+                  <div key={itemIndex} className="flex justify-between items-start p-3 bg-muted/30 rounded-lg">
+                    <div>
+                      <p className="font-medium text-sm text-foreground">{item.name}</p>
+                      <p className="text-xs text-muted-foreground">{item.institution} • {item.year}</p>
                     </div>
-                  ))}
-                </div>
+                    <span className="text-sm font-medium text-primary">{item.amount}</span>
+                  </div>
+                ))}
               </div>
-            )
-          ))}
-        </div>
-      </CardContent>
-    </Card>
+            </CardContent>
+          </Card>
+        )
+      ))}
+    </>
   )
 }
