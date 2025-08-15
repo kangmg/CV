@@ -20,13 +20,13 @@ export function Awards({ awards, scholarships, grants }: AwardsProps) {
       {awardCategories.map((category, index) => (
         category.items.length > 0 && (
           <Card key={index} className="border-border bg-card shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
-            <div className="pb-3 flex items-center gap-2 px-4">
-              <category.icon className="w-5 h-5 text-primary" />
-              <h3 className="text-lg font-semibold text-foreground mb-2 leading-none">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-xl font-semibold text-foreground flex items-center gap-2">
+                <category.icon className="w-5 h-5 text-primary" />
                 {category.title}
-              </h3>
-            </div>
-            <CardContent className="pt-0 px-4">
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="pt-0">
               <div className="space-y-2">
                 {category.items.map((item, itemIndex) => (
                   <div key={itemIndex} className="flex justify-between items-start p-3 bg-muted/30 rounded-lg">
