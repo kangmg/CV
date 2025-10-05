@@ -1,6 +1,6 @@
-update: '2025-08-11'
+update: '2025-10-06'
 name: Mingi KANG
-title: Computational Chemistry & Machine Learning Researcher
+title: Computational Chemistry & Machine Learning
 github: github.com/kangmg
 email: kangmg@korea.ac.kr
 blog: kangmg.github.io
@@ -14,8 +14,8 @@ skills:
   - 'Molecular Dynamics: OpenMM, ASE'
   - 'Modeling & Simulation: scikit-learn, pytorch, Training ML potentials'
   Scientific_Skills:
-  - Job scripting & submission in HPC server (PBS, SGE) via SSH
-  - Dataset construction & handling (HDF5, SQL)
+  - HPC server & scheduling e.g. PBS, SGE
+  - Dataset handling (HDF5, SQL)
   - Data visualization
   Development_Skills:
   - Workflow automation
@@ -64,26 +64,18 @@ research_experience:
   - Conducted MLP-based molecular dynamics simulations of carbon polymerizations and
     acetylene annulation reactions
   - Developed Python package for MLP-based distortion interaction analysis calculations
-- title: X-Corps Research Program
-  duration: November 2019 - April 2020
-  lab: Biomedical Nano-engineering Lab, Korea University (Sejong)
-  advisor: Prof. Gyudo Lee
-  achievements:
-  - Developed paper-based colorimetric biosensor for ethanol concentration measurement
-    and color quantification
-  - Synthesized polyaniline (PANI) nanoparticles and immobilized ADH on PANI-coated
-    paper
-  - Proposed RGB color picker method for pH prediction and studied lighting brightness
-    effect corrections
+# - title: X-Corps Research Program
+#   duration: November 2019 - April 2020
+#   lab: Biomedical Nano-engineering Lab, Korea University (Sejong)
+#   advisor: Prof. Gyudo Lee
+#   achievements:
+#   - Developed paper-based colorimetric biosensor for ethanol concentration measurement
+#     and color quantification
+#   - Synthesized polyaniline (PANI) nanoparticles and immobilized ADH on PANI-coated
+#     paper
+#   - Proposed RGB color picker method for pH prediction and studied lighting brightness
+#     effect corrections
 projects:
-- title: ASE Community Code Development
-  link: ''
-  duration: ''
-  extra: []
-  achievements:
-  - Implemented ASE calculator interfaces for g-xTB, PySCF, MLatom, and XequiNet
-  - Developed optimizer wrappers for asemcd and geomeTRIC to enhance integration of
-    ASE-centered workflows
 - title: Distortion Interaction Analysis
   link: ''
   duration: ''
@@ -91,14 +83,13 @@ projects:
   achievements:
   - Implemented ASE interfaces for distortion interaction analysis calculations
   - Enabled flexible computations and streamlined computational workflows
-- title: randatoms
-  link: ''
+- title: Molecule Aligner
+  link: 'https://github.com/kangmg/molecule_aligner'
   duration: ''
   extra: []
   achievements:
-  - Developed a molecular filtering package using pickle-based metadata caching
-  - Used indexed HDF5 storage to enable fast random access and optimize I/O performance
-    for large-scale molecular datasets
+  - Developed a Python package for merging, interpolating, and aligning molecular trajectories
+  - Enabled construction of smooth, multi-step reaction pathways from mixed molecular inputs
 - title: Molecular Visualizer
   link: ''
   duration: ''
@@ -129,6 +120,22 @@ projects:
   - Preprocessed audio data by adjusting sampling rates and converting file formats
     to wav
   - Transformed audio data into Mel spectrogram for modeling
+- title: ASE Community Code Development
+  link: ''
+  duration: ''
+  extra: []
+  achievements:
+  - Implemented ASE calculator interfaces for g-xTB, PySCF, MLatom, and XequiNet
+  - Developed optimizer wrappers for asemcd and geomeTRIC to enhance integration of
+    ASE-centered workflows
+- title: randatoms
+  link: ''
+  duration: ''
+  extra: []
+  achievements:
+  - Developed a molecular filtering package using pickle-based metadata caching
+  - Used indexed HDF5 storage to enable fast random access and optimize I/O performance
+    for large-scale molecular datasets
 presentations:
 - title: '-'
   event: '-'
@@ -144,7 +151,7 @@ education:
 military_service:
   branch: Country's Army
   rank: Sergeant
-  duration: April 2021 – October 2022
+  duration: April 2021 - October 2022
 additional_activity:
   activity: Data Science Bootcamp
   duration: February 2024 - July 2024
