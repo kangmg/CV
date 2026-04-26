@@ -1,6 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Award as AwardIcon, GraduationCap, Gift } from "lucide-react"
-import { Award } from "@/types/cv"
+import type { Award } from "@/types/cv"
 
 interface AwardsProps {
   awards: Award[]
@@ -8,40 +6,33 @@ interface AwardsProps {
   grants: Award[]
 }
 
-export function Awards({ awards, scholarships, grants }: AwardsProps) {
-  const awardCategories = [
-    { title: "Awards & Honors", items: awards, icon: AwardIcon },
-    { title: "Scholarships", items: scholarships, icon: GraduationCap },
-    { title: "Research Grants", items: grants, icon: GraduationCap },
-  ]
-
+function AwardList({ label, items }: { label: string; items: Award[] }) {
+  if (items.length === 0) return null
   return (
     <>
-      {awardCategories.map((category, index) => (
-        category.items.length > 0 && (
-          <Card key={index} className="border-border bg-card shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-xl font-semibold text-foreground flex items-center gap-2">
-                <category.icon className="w-5 h-5 text-primary" />
-                {category.title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="pt-0">
-              <div className="space-y-2">
-                {category.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex justify-between items-start p-3 bg-muted/30 rounded-lg">
-                    <div>
-                      <p className="font-medium text-sm text-foreground">{item.name}</p>
-                      <p className="text-xs text-muted-foreground">{item.institution} • {item.year}</p>
-                    </div>
-                    <span className="text-sm font-medium text-primary">{item.amount}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        )
+      <div className="cv-section-label">{label}</div>
+      {items.map((item, i) => (
+        <div key={i} className="cv-award-row">
+          <div>
+            <div className="cv-award-name">{item.name}</div>
+            <div className="cv-award-inst">{item.institution}</div>
+          </div>
+          <div className="cv-award-right">
+            <div className="cv-award-year">{item.year}</div>
+            {item.amount && <div className="cv-award-amount">{item.amount}</div>}
+          </div>
+        </div>
       ))}
+    </>
+  )
+}
+
+export function Awards({ awards, scholarships, grants }: AwardsProps) {
+  return (
+    <>
+      <AwardList label="Scholarships" items={scholarships} />
+      <AwardList label="Awards & Honors" items={awards} />
+      <AwardList label="Research Grants" items={grants} />
     </>
   )
 }

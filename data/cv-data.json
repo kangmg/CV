@@ -1,7 +1,7 @@
 {
-  "update": "2025-08-11",
+  "update": "2025-10-06",
   "name": "Mingi KANG",
-  "title": "Computational Chemistry & Machine Learning Researcher",
+  "title": "Computational Chemistry & Machine Learning",
   "github": "github.com/kangmg",
   "email": "kangmg@korea.ac.kr",
   "blog": "kangmg.github.io",
@@ -22,8 +22,8 @@
       "Modeling & Simulation: scikit-learn, pytorch, Training ML potentials"
     ],
     "Scientific_Skills": [
-      "Job scripting & submission in HPC server (PBS, SGE) via SSH",
-      "Dataset construction & handling (HDF5, SQL)",
+      "HPC server & scheduling e.g. PBS, SGE",
+      "Dataset handling (HDF5, SQL)",
       "Data visualization"
     ],
     "Development_Skills": [
@@ -39,7 +39,7 @@
       "lab": "Lab of Ultrafast Spectroscopy, Korea University (Sejong)",
       "advisor": "Prof. Jae Yoon Shin",
       "achievements": [
-        "Investigated kinetic behavior of ionic liquids in porous filters (Polyethersulfone and Anodisc)",
+        "Investigated dynamic behavior of ionic liquids in porous filters (Polyethersulfone and Anodisc)",
         "Performed molecular dynamics calculations using force fields and fine-tuned ML potentials",
         "Built simulation systems and analyzed dynamic trajectories to determine diffusion coefficients"
       ]
@@ -77,30 +77,9 @@
         "Conducted MLP-based molecular dynamics simulations of carbon polymerizations and acetylene annulation reactions",
         "Developed Python package for MLP-based distortion interaction analysis calculations"
       ]
-    },
-    {
-      "title": "X-Corps Research Program",
-      "duration": "November 2019 - April 2020",
-      "lab": "Biomedical Nano-engineering Lab, Korea University (Sejong)",
-      "advisor": "Prof. Gyudo Lee",
-      "achievements": [
-        "Developed paper-based colorimetric biosensor for ethanol concentration measurement and color quantification",
-        "Synthesized polyaniline (PANI) nanoparticles and immobilized ADH on PANI-coated paper",
-        "Proposed RGB color picker method for pH prediction and studied lighting brightness effect corrections"
-      ]
     }
   ],
   "projects": [
-    {
-      "title": "ASE Community Code Development",
-      "link": "",
-      "duration": "",
-      "extra": [],
-      "achievements": [
-        "Implemented ASE calculator interfaces for g-xTB, PySCF, MLatom, and XequiNet",
-        "Developed optimizer wrappers for aseMCD and GeomeTRIC to enhance integration of ASE-centered workflows"
-      ]
-    },
     {
       "title": "Distortion Interaction Analysis",
       "link": "",
@@ -112,13 +91,13 @@
       ]
     },
     {
-      "title": "randatoms",
+      "title": "Molecule Aligner",
       "link": "",
       "duration": "",
       "extra": [],
       "achievements": [
-        "Developed a molecular filtering package using pickle-based metadata caching",
-        "Used indexed HDF5 storage to enable fast random access and optimize I/O performance for large-scale molecular datasets"
+        "Developed a Python package for merging, interpolating, and aligning molecular trajectories",
+        "Enabled construction of smooth, multi-step reaction pathways from mixed molecular inputs"
       ]
     },
     {
@@ -157,6 +136,26 @@
         "Preprocessed audio data by adjusting sampling rates and converting file formats to wav",
         "Transformed audio data into Mel spectrogram for modeling"
       ]
+    },
+    {
+      "title": "ASE Community Code Development",
+      "link": "",
+      "duration": "",
+      "extra": [],
+      "achievements": [
+        "Implemented ASE calculator interfaces for g-xTB, PySCF, MLatom, and XequiNet",
+        "Developed optimizer wrappers for asemcd and geomeTRIC to enhance integration of ASE-centered workflows"
+      ]
+    },
+    {
+      "title": "randatoms",
+      "link": "",
+      "duration": "",
+      "extra": [],
+      "achievements": [
+        "Developed a molecular filtering package using pickle-based metadata caching",
+        "Used indexed HDF5 storage to enable fast random access and optimize I/O performance for large-scale molecular datasets"
+      ]
     }
   ],
   "presentations": [
@@ -178,13 +177,13 @@
     "gpa": "4.12 / 4.5"
   },
   "military_service": {
-    "branch": "Country's Army",
-    "rank": "Sergeant",
-    "duration": "July 2022 - January 2024"
+    "branch": "Republic of Korea Army (육군)",
+    "rank": "Sergeant (병장) · Mandatory Military Service",
+    "duration": "April 2021 - October 2022"
   },
   "additional_activity": {
     "activity": "Data Science Bootcamp",
-    "duration": "February 2023 - July 2023",
+    "duration": "February 2024 - July 2024",
     "description": "Completed a 6-month intensive course on data science and machine learning"
   },
   "awards_honors": [
