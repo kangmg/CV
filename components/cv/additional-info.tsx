@@ -1,7 +1,7 @@
 import type { Education, MilitaryService, AdditionalActivity } from "@/types/cv"
 
 interface AdditionalInfoProps {
-  education: Education
+  education: Education[]
   militaryService: MilitaryService
   additionalActivity: AdditionalActivity
   showOnlyEducation?: boolean
@@ -24,16 +24,37 @@ export function AdditionalInfo({
       {(showAll || showOnlyEducation) && (
         <>
           <div className="cv-section-label">Education</div>
-          <div className="cv-info-block">
-            <span className="cv-info-label">University</span>
-            <span className="cv-info-value"><strong>{education.university}</strong></span>
-            <span className="cv-info-label">Period</span>
-            <span className="cv-info-value">{education.duration}</span>
-            <span className="cv-info-label">Degree</span>
-            <span className="cv-info-value">{education.degree}</span>
-            <span className="cv-info-label">GPA</span>
-            <span className="cv-info-value"><strong>{education.gpa}</strong></span>
-          </div>
+          {education.map((item, i) => (
+            <div key={`${item.institution}-${item.duration}`} className="cv-education-item">
+              <div className="cv-info-block">
+                <span className="cv-info-label">Institution</span>
+                <span className="cv-info-value"><strong>{item.institution}</strong></span>
+                <span className="cv-info-label">Period</span>
+                <span className="cv-info-value">{item.duration}</span>
+                <span className="cv-info-label">Degree</span>
+                <span className="cv-info-value">{item.degree}</span>
+                {item.department && (
+                  <>
+                    <span className="cv-info-label">Department</span>
+                    <span className="cv-info-value">{item.department}</span>
+                  </>
+                )}
+                {item.advisor && (
+                  <>
+                    <span className="cv-info-label">Advisor</span>
+                    <span className="cv-info-value">{item.advisor}</span>
+                  </>
+                )}
+                {item.gpa && (
+                  <>
+                    <span className="cv-info-label">GPA</span>
+                    <span className="cv-info-value"><strong>{item.gpa}</strong></span>
+                  </>
+                )}
+              </div>
+              {i < education.length - 1 && <div className="cv-info-divider" />}
+            </div>
+          ))}
         </>
       )}
 

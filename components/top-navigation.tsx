@@ -1,13 +1,15 @@
 "use client"
 
-import { Monitor, FileText, LayoutGrid } from "lucide-react"
+import { Monitor, FileText, LayoutGrid, Moon, Sun } from "lucide-react"
 
 interface TopNavigationProps {
   activeTab: "cv" | "pdf" | "projects"
   onTabChange: (tab: "cv" | "pdf" | "projects") => void
+  theme: "light" | "dark"
+  onThemeToggle: () => void
 }
 
-export function TopNavigation({ activeTab, onTabChange }: TopNavigationProps) {
+export function TopNavigation({ activeTab, onTabChange, theme, onThemeToggle }: TopNavigationProps) {
   return (
     <nav className="cv-nav">
       <button
@@ -30,6 +32,14 @@ export function TopNavigation({ activeTab, onTabChange }: TopNavigationProps) {
       >
         <LayoutGrid className="cv-nav-icon" />
         Project Gallery
+      </button>
+      <button
+        className="cv-nav-btn cv-theme-btn"
+        onClick={onThemeToggle}
+        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+        title={theme === "dark" ? "Light mode" : "Dark mode"}
+      >
+        {theme === "dark" ? <Sun className="cv-nav-icon" /> : <Moon className="cv-nav-icon" />}
       </button>
     </nav>
   )

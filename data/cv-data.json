@@ -3,8 +3,10 @@
   "name": "Mingi KANG",
   "title": "Computational Chemistry & Machine Learning",
   "github": "github.com/kangmg",
-  "email": "kangmg@korea.ac.kr",
+  "email": "kangmg@kentech.ac.kr",
   "blog": "kangmg.github.io",
+  "show_blog": false,
+  "orcid": "0009-0003-1551-6771",
   "research_interest": "My research interests focus on understanding chemical phenomena at the microscopic level through computational chemistry methodologies and accelerating these investigations using AI. Based on this fundamental understanding, I aim to explore and design novel materials and catalysts.",
   "Keywords": [
     "Ab initio",
@@ -111,33 +113,6 @@
       ]
     },
     {
-      "title": "Image to Music Recommendation Service",
-      "link": "",
-      "duration": "June 2024",
-      "extra": [
-        "Like Lion School DATATON"
-      ],
-      "achievements": [
-        "Proposed the project topic and managed its scheduling, planning, and overall design",
-        "Collected various types of data using APIs and web crawling, and performed data preprocessing",
-        "Designed the service architecture, developed, and deployed the website using Streamlit"
-      ]
-    },
-    {
-      "title": "Deepfake Voice Detection",
-      "link": "",
-      "duration": "Sep 2024 - May 2025",
-      "extra": [
-        "Like Lion School",
-        "Mentor: Dongbin Na"
-      ],
-      "achievements": [
-        "Proposed a strategy for generating deepfake voice data",
-        "Preprocessed audio data by adjusting sampling rates and converting file formats to wav",
-        "Transformed audio data into Mel spectrogram for modeling"
-      ]
-    },
-    {
       "title": "ASE Community Code Development",
       "link": "",
       "duration": "",
@@ -145,16 +120,6 @@
       "achievements": [
         "Implemented ASE calculator interfaces for g-xTB, PySCF, MLatom, and XequiNet",
         "Developed optimizer wrappers for asemcd and geomeTRIC to enhance integration of ASE-centered workflows"
-      ]
-    },
-    {
-      "title": "randatoms",
-      "link": "",
-      "duration": "",
-      "extra": [],
-      "achievements": [
-        "Developed a molecular filtering package using pickle-based metadata caching",
-        "Used indexed HDF5 storage to enable fast random access and optimize I/O performance for large-scale molecular datasets"
       ]
     }
   ],
@@ -170,15 +135,33 @@
       "date": "-"
     }
   ],
-  "education": {
-    "university": "Korea University (Sejong)",
-    "duration": "March 2019 - Present",
-    "degree": "B.S. in Advanced Material Chemistry",
-    "gpa": "4.12 / 4.5"
-  },
+  "publications": [
+    {
+      "title": "Amorphous π-Conjugated Passivator Facilitates Widening Process Window for Reliable Perovskite Solar Modules",
+      "authors": "H.S. Kim†, Y.Y. Kim†, H. Na†, Y.-H. Seo, S.J. Na, S. Lee, M. Kang, J. Jang, D. Kim, Y. Ju, S.-M. Yoo, J.Y. Park, B.J. Kang, G.H. Gu, T.J. Shin, J. Lee*, N.J. Jeon*, E.H. Jung*",
+      "venue": "Adv. Energy Mater.",
+      "year": "2026",
+      "status": "Accepted"
+    }
+  ],
+  "education": [
+    {
+      "institution": "KENTECH",
+      "duration": "March 2026 - Present",
+      "degree": "Integrated M.S./Ph.D. Program",
+      "department": "Department of Energy Engineering",
+      "advisor": "Prof. Geunho Gu"
+    },
+    {
+      "institution": "Korea University (Sejong)",
+      "duration": "March 2019 - February 2026",
+      "degree": "B.S. in Advanced Material Chemistry",
+      "gpa": "4.12 / 4.5"
+    }
+  ],
   "military_service": {
-    "branch": "Republic of Korea Army (육군)",
-    "rank": "Sergeant (병장) · Mandatory Military Service",
+    "branch": "Republic of Korea Army",
+    "rank": "Sergeant · Mandatory Military Service",
     "duration": "April 2021 - October 2022"
   },
   "additional_activity": {

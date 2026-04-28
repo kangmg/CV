@@ -8,6 +8,7 @@
 #let contacts = (
   link("mailto:" + data.email)[#data.email],
   link("https://" + data.github)[#data.github],
+  link("https://orcid.org/" + data.orcid)[orcid.org/#data.orcid],
 )
 #let summary = data.research_interest
 
@@ -61,22 +62,91 @@
   )
 }
 
+// publications
+#let author_mark(mark) = text(size: 0.72em, baseline: 0.18em)[#mark]
+
+#let author_notes(text) = {
+  let with_stars = (value) => {
+    let parts = value.split("*")
+    let result = []
+    for (i, part) in parts.enumerate() {
+      result += [#part]
+      if i < parts.len() - 1 {
+        result += author_mark("*")
+      }
+    }
+    result
+  }
+
+  let parts = text.split("†")
+  let result = []
+  for (i, part) in parts.enumerate() {
+    result += with_stars(part)
+    if i < parts.len() - 1 {
+      result += author_mark("†")
+    }
+  }
+  result
+}
+
+#let highlighted_authors(authors) = {
+  let parts = authors.split("M. Kang")
+  let result = []
+  for (i, part) in parts.enumerate() {
+    result += author_notes(part)
+    if i < parts.len() - 1 {
+      result += underline(strong[M. Kang])
+    }
+  }
+  result
+}
+
+#let publication_date(publication) = {
+  let status = publication.at("status", default: "")
+  let year = publication.at("year", default: "")
+  if status != "" and year != "" {
+    status + " (" + year + ")"
+  } else if status != "" {
+    status
+  } else if year != "" {
+    year
+  } else {
+    ""
+  }
+}
+
+#if data.publications.len() > 0 [
+  = Publications
+  #for publication in data.publications [
+    #highlighted_authors(publication.authors)#text[.] #publication.title.
+    #if publication.at("venue", default: "") != "" [
+      #emph[#publication.venue]#if publication_date(publication) != "" [, ]
+    ]
+    #if publication_date(publication) != "" [
+      #strong[#publication_date(publication)].
+    ]
+  ]
+]
+
 // education
 = Education
-#edu(
-  institution: data.education.university,
-  date: data.education.duration,
-  location: "",
-//  degrees: (
-//    (data.education.degree, "Major"),
-//  ),
-  gpa: data.education.gpa,
-  extra: data.education.degree,
-)
+#for education in data.education {
+  let extra = education.degree
+  if education.at("department", default: "") != "" {
+    extra = extra + ", " + education.department
+  }
+  edu(
+    institution: education.institution,
+    date: education.duration,
+    location: education.at("advisor", default: ""),
+    gpa: education.at("gpa", default: ""),
+    extra: extra,
+  )
+}
 
 
-// Projects
-= Projects
+// selected projects
+= Selected Projects
 #for project in data.projects {
   exp(
     title: project.title,

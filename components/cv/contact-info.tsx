@@ -1,7 +1,11 @@
+import { IdCard } from "lucide-react"
+
 interface ContactInfoProps {
   email: string
   github: string
   blog: string
+  showBlog?: boolean
+  orcid: string
 }
 
 const MailIcon = () => (
@@ -25,7 +29,10 @@ const GlobeIcon = () => (
   </svg>
 )
 
-export function ContactInfo({ email, github, blog }: ContactInfoProps) {
+export function ContactInfo({ email, github, blog, showBlog = false, orcid }: ContactInfoProps) {
+  const orcidUrl = `https://orcid.org/${orcid}`
+  const orcidLabel = `orcid.org/${orcid}`
+
   return (
     <div className="cv-contact-bar">
       <a href={`mailto:${email}`} className="cv-contact-item">
@@ -36,10 +43,16 @@ export function ContactInfo({ email, github, blog }: ContactInfoProps) {
         <GithubIcon />
         {github}
       </a>
-      <a href={`https://${blog}`} target="_blank" rel="noopener noreferrer" className="cv-contact-item">
-        <GlobeIcon />
-        {blog}
+      <a href={orcidUrl} target="_blank" rel="noopener noreferrer" className="cv-contact-item" aria-label={orcidLabel}>
+        <IdCard strokeWidth={1.5} />
+        {orcidLabel}
       </a>
+      {showBlog && (
+        <a href={`https://${blog}`} target="_blank" rel="noopener noreferrer" className="cv-contact-item">
+          <GlobeIcon />
+          {blog}
+        </a>
+      )}
     </div>
   )
 }

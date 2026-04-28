@@ -5,6 +5,8 @@ export interface CVData {
   github: string
   email: string
   blog: string
+  show_blog?: boolean
+  orcid: string
   research_interest: string
   Keywords?: string[]
   skills: {
@@ -15,7 +17,8 @@ export interface CVData {
   research_experience: ResearchExperience[]
   projects: Project[]
   presentations: Presentation[]
-  education: Education
+  publications: Publication[]
+  education: Education[]
   military_service: MilitaryService
   additional_activity: AdditionalActivity
   awards_honors: Award[]
@@ -46,8 +49,10 @@ export interface Project {
 export interface ProjectHighlight {
   title: string
   image: string
-  period: string
+  images?: string[]
+  period: string | number
   descriptions: string[]
+  details?: string[]
   custom_tag: string
   keywords?: string[]
   is_team: boolean
@@ -59,11 +64,23 @@ export interface Presentation {
   date: string
 }
 
+export interface Publication {
+  title: string
+  authors: string
+  venue?: string
+  year?: string
+  status?: string
+  doi?: string
+  link?: string
+}
+
 export interface Education {
-  university: string
+  institution: string
   duration: string
   degree: string
-  gpa: string
+  department?: string
+  advisor?: string
+  gpa?: string
 }
 
 export interface MilitaryService {
@@ -82,5 +99,5 @@ export interface Award {
   name: string
   institution: string
   year: string
-  amount: string
+  amount?: string
 }

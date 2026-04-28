@@ -1,6 +1,26 @@
 {
   "project_highlights": [
     {
+      "title": "Image to Music Recommendation Service",
+      "image": "placeholder.jpg?height=300&width=300",
+      "images": [
+        "placeholder.jpg?height=300&width=300"
+      ],
+      "period": 2024.06,
+      "descriptions": [
+        "Proposed the project topic and managed scheduling, planning, and service design",
+        "Collected and preprocessed multimodal data using APIs and web crawling",
+        "Developed and deployed the prototype website using Streamlit"
+      ],
+      "details": [
+        "Built a prototype service that recommends music from image-derived context and mood signals.",
+        "Led topic proposal, project scheduling, service planning, and overall presentation structure.",
+        "Prepared API and crawling workflows for data collection, preprocessing, and Streamlit deployment."
+      ],
+      "custom_tag": "Data Service, Recommendation, Streamlit",
+      "is_team": true
+    },
+    {
       "title": "Molecular Visualizer Preview (aseview v2)",
       "image": "asset/styles.png?height=300&width=300",
       "period": 2025.07,

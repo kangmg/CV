@@ -7,7 +7,7 @@ interface ProjectsProps {
 export function Projects({ projects }: ProjectsProps) {
   return (
     <>
-      <div className="cv-section-label">Projects</div>
+      <div className="cv-section-label">Selected Projects</div>
       <div>
         {projects.map((proj, i) => (
           <div key={i} className="cv-project-item">

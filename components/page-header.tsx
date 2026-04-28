@@ -18,8 +18,6 @@ export function PageHeader({ updateDate, name, title }: PageHeaderProps) {
     <header className="cv-header">
       <div className="cv-header-inner">
         <div className="cv-header-meta">
-          <span>↗ Computational Chemistry</span>
-          <span style={{ color: "#ccc" }}>·····</span>
           <span>Last updated: {formatDate(updateDate)}</span>
         </div>
         <h1 className="cv-name">{name}</h1>
